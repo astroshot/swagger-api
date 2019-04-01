@@ -10,5 +10,5 @@ class SwaggerHandler(APIBaseHandler):
     def get(self, spec_name):
         spec_file_path = "{}/{}.yaml".format(SWAGGER_PATH, spec_name)
         yaml_content = open(spec_file_path, 'r')
-        content = yaml.load(yaml_content)
+        content = yaml.full_load(yaml_content)
         self.render_json(content)
