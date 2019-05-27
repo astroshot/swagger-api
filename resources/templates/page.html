@@ -35,7 +35,7 @@
     <div id="swagger-files">
       <ul>
         {% for schema_name in schema_names %}
-        <li><a href="{{base_url}}/api/{{schema_name}}">{{schema_name}}</a></li>
+        <li><a href="{{base_url}}/doc/{{schema_name}}">{{schema_name}}</a></li>
         {% end %}
       </ul>
     </div>
@@ -46,7 +46,7 @@
       window.onload = function() {
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
-          url: "{{base_url}}/spec/{{spec_name}}",
+          url: "{{base_url}}/api/{{spec_name}}",
           dom_id: '#swagger-ui',
           deepLinking: true,
           presets: [

@@ -7,6 +7,6 @@ from src.web.handler import SwaggerAPIPageHandler
 
 handlers = [
     (r'/', HomeHandler),
-    (r'/spec/([\w.-]+)', SwaggerHandler),
-    (r'/api/([\w.-]+)', SwaggerAPIPageHandler),
+    (r'/api/([\w.-]+)', SwaggerHandler),
+    (r'/doc/([\w.-]+)', SwaggerAPIPageHandler),
 ]
