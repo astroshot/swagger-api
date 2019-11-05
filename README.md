@@ -1,9 +1,15 @@
 # Swagger UI
 
+This project displays API doc based on Swagger UI by python server.
+
 ## Dependence
 
 1. Python 3
 2. buildout
+
+## Usage
+
+Write your Swagger yaml document in dir swagger, and start server.
 
 ## Start
 
